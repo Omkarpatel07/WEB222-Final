@@ -1,0 +1,286 @@
+
+ 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Hind+Siliguri:wght@300&family=Mukta:wght@200&family=Open+Sans:wght@300&family=Roboto+Slab:wght@600&family=Roboto:wght@300&family=Ubuntu+Mono&display=swap');
+
+/* Top navigation bar */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #121435;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Alkatra', sans-serif;
+    color: #000000;
+    font-size: 1.1em;
+}
+
+/* Bottom subscription bar */
+
+.subscribe {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #121435;
+    border-top: 1px solid #ccc;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe h2 {
+    margin: 2px 0px;
+    font-size: 1.2em;
+    color: #faf9f0;
+}
+
+.subscribe label {
+    color: #faf9f0;
+    padding-right: 10px;
+}
+.subscribe button:hover {
+    cursor: pointer;
+}
+
+form {
+    font-family: "Hind Siliguri", Helvetica, sans-serif; 
+}
+
+button {
+    margin: 0 10px;
+    padding: 2px 20px;
+}
+
+/* article area */
+
+h1, h2, h3 {
+    font-family: 'Alkatra', sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+body {
+    margin: 40px 0px 120px 0px;
+    background-color: #faf9f0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    max-width: 800px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.2em;
+}
+
+ol{
+    padding: 20px;
+}
+
+li {
+    max-width: 750px;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.award-list {
+    display: flex;
+    align-items: center;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+  
+li .menu-icon {
+margin-right: 10px;
+}
+
+article {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+/* Mobile Responsive */
+@media only screen and (max-width: 767px) {
+    article {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 0.8em;
+    }
+  }
+/* Media items */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.8em;
+    font-style: italic;
+    max-width: 800px;   
+    font-family: "Hind Siliguri", Helvetica, sans-serif; 
+}
+/* Reviews Page - Card Part */
+.review {
+    border: 7px solid #f0eeda;
+    border-radius: 16px;
+    margin: 10px;
+    padding: 20px;
+    width: 40%;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .review h3 {
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    background-color: #f0eeda;
+    margin: 0;
+  }
+  
+  .review p {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .review .date {
+    font-size: 14px;
+  }
+  
+  .review .rating {
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .review .text {
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .review-form-input-area {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .review-form-input-area textarea {
+    height: 150px;
+    width: 100%;
+    resize: none;
+  }
+  
+  .form-name-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .reviews-form button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #edebca;
+    font-family: "Hind Siliguri", Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reviews-form button:hover {
+    background-color: #d1cfb2;
+  }
+  
+  
+/* Mobile Responsive */
+@media screen and (min-width: 768px) {
+    .review-form-input-area {
+      padding: 35px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .form-review textarea {
+      width: 700px;
+    }
+  
+    .form-name-date {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .form-name,
+    .form-date {
+      margin-bottom: 0;
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
